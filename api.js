@@ -154,6 +154,61 @@
               
               Plotly.newPlot('myDiv2', data);
             
+
+              var trace1 = {
+                x: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                y: [0, 3, 6, 4, 5, 2, 3, 5, 4],
+                type: 'scatter',
+                mode: 'markers',
+                text: names,
+                ids: ids,
+                marker: {
+                  color: smoothnesses,
+                  size: soil_drynesses
+                }
+              };
+              
+              var trace2 = {
+                x: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                y: [0, 4, 7, 8, 3, 6, 3, 3, 4],
+                type: 'scatter',
+                mode: 'markers',
+                text: names,
+                ids: ids,
+                marker: {
+                  color: smoothnesses,
+                  size: soil_drynesses
+                }
+              };
+              
+              var data = [trace1, trace2];
+              var layout = {
+                showlegend: true,
+                legend: {
+                  x: 1,
+                  xanchor: 'right',
+                  y: 1
+                }
+              };
+              
+              Plotly.newPlot('myDiv3', data, layout);
+              
+
+              var data = [{
+                type: "pie",
+                values: [2, 3, 4, 4],
+                labels: ["Wages", "Operating expenses", "Cost of sales", "Insurance"],
+                textinfo: "label+percent",
+                insidetextorientation: "radial"
+              }]
+              
+              var layout = [{
+                height: 700,
+                width: 700
+              }]
+              
+              Plotly.newPlot('myDiv4', data, layout)
+              
           });
       });
     }
