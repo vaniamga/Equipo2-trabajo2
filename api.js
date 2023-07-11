@@ -109,8 +109,21 @@
               contenido += '<tr><td>' + ids[i] + '</td><td>'+ names[i] + '</td><td>'+ growth_times[i] + '</td><td>'+ natural_gift_powers[i] + '</td><td>'+ sizes[i] + '</td><td>'+ smoothnesses[i] + '</td><td>'+ soil_drynesses[i] + '</td></tr>';
             }
             tabla.innerHTML = contenido;
+
+            
+              var data = [{
+                
+                  x: names, 
+                  y: growth_times, 
+                  type: 'bar'
+                }
+              ];
+            
+              Plotly.newPlot('myDiv1', data);
+            
           });
       });
-  }
+    }
 
+  
 
