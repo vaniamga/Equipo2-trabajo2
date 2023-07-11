@@ -32,10 +32,41 @@
             </div>
         </div>
 
-        <div class="endPoint">
+        <div class="ep">
             <label>Ingrese el endpoint </label>
-            <input type="text" class="form-control" id="endpoint" placeholder="Pega el URL de tu endpoint aquí">
-            <button class="boton" onclick="obtenerDatos()">Obtener datos</button>
+            <input type="text" class="form-control" id="endPoint" placeholder="Pega el URL de tu endpoint aquí">
+            <button id="endPoint" class="boton" onclick="consumir()">Obtener datos</button>
+        </div>
+
+        <div class="secciontabla">
+            <div class="intro">
+                <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
+                <h2>Berries</h2>
+                <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
+            </div>
+            <p class="texttable">Selecciona tu berri para saber la información de ella</p>
+            <div class="tablas">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                 </table>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Crecimiento (hrs)</th>
+                            <th>Poder natural</th>
+                            <th>Tamaño</th>
+                            <th>Suavidad</th>
+                            <th>Secado de tierra</th>
+                            <th>Información</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
 
         <div class="graficas">
@@ -65,6 +96,6 @@
         
     </main>
     <footer></footer>
-
+<script src="api.js"></script>
 </body>
 </html>

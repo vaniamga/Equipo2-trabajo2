@@ -41,10 +41,9 @@ h2{
 
 p{
     color:#FFDE00;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
     margin:10px;
     text-align: justify;
+    background-color:#3B4CCA;
 }
 
 .imgi{
@@ -59,7 +58,7 @@ label{
     text-align: center;
 }
 
-.endPoint{
+.ep{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +85,22 @@ label{
     padding:10px;
 }
 
+.secciontabla{
+    background-color:#3B4CCA;
+}
+
+.tablas{
+    display: flex;
+    flex-direction: row;
+}
+
+.table{
+    background-color: #FFDE00;
+}
+.texttable{
+text-align: center;
+}
+
 .graficas{
     align-items: center;
     justify-content: center;
@@ -108,8 +123,6 @@ label{
     background-color: #FFDE00;
     display: flex;
     flex-direction: column;
-    justify-content:;
+    justify-content:center;
     gap: 20px;
 }
-
-.card-text{}
