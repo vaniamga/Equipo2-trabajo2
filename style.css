@@ -1,0 +1,120 @@
+
+header{
+    width: 100%;
+}
+.titulo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #CC0000;
+    color: #FFDE00;
+}
+
+h1{
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #3B4CCA;
+    font-size: 55px;
+}
+
+.imgt{
+   width: 90px; 
+   height: fit-content;
+   padding: 20px;
+}
+
+h2{
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #CC0000;
+    font-size: 45px;
+    color:#FFDE00;
+    text-align: center;
+}
+
+.intro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#3B4CCA;
+}
+
+p{
+    color:#FFDE00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin:10px;
+    text-align: justify;
+}
+
+.imgi{
+    padding:20px;
+}
+
+.graficas{
+    align-items: center;
+    justify-content: center;
+    background-color:#3B4CCA;
+}
+.graficas-row1{
+    background-color:#3B4CCA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.graficas-row2{
+    background-color:#3B4CCA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: #FFDE00;
+}
+
+.card{
+    border-radius:30px #FFDE00;
+    color: #3B4CCA;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #CC0000;
+    font-size: 35px;
+    text-align: center;
+}
+
+label{
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #CC0000;
+    font-size: 45px;
+    color:#FFDE00;
+    text-align: center;
+}
+
+.endpoint{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#3B4CCA;
+    padding: 30px;
+    gap: 20px;
+}
+
+.form-control{
+    border-radius:30px;
+
+}
+
+button{
+    font-family:'Pokemon Solid', sans-serif;
+    font-size: 25px;
+    color:#FFDE00;
+    background-color: #CC0000;
+    text-shadow: 8px 8px 8px #3B4CCA;
+    border: 90px;
+    width: 25%;   
+    height: 55px;
+    border-radius:30px;
+    padding:10px;
+}
