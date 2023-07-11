@@ -51,47 +51,15 @@ p{
     padding:20px;
 }
 
-.graficas{
-    align-items: center;
-    justify-content: center;
-    background-color:#3B4CCA;
-}
-.graficas-row1{
-    background-color:#3B4CCA;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.graficas-row2{
-    background-color:#3B4CCA;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: #FFDE00;
-}
-
-.card{
-    border-radius:30px #FFDE00;
-    color: #3B4CCA;
-    font-family: 'Pokemon Solid', sans-serif;
-    text-shadow: 8px 8px 8px #CC0000;
-    font-size: 35px;
-    text-align: center;
-}
-
 label{
     font-family: 'Pokemon Solid', sans-serif;
     text-shadow: 8px 8px 8px #CC0000;
-    font-size: 45px;
+    font-size: 35px;
     color:#FFDE00;
     text-align: center;
 }
 
-.endpoint{
+.endPoint{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -103,10 +71,9 @@ label{
 
 .form-control{
     border-radius:30px;
-
 }
 
-button{
+.boton{
     font-family:'Pokemon Solid', sans-serif;
     font-size: 25px;
     color:#FFDE00;
@@ -118,3 +85,31 @@ button{
     border-radius:30px;
     padding:10px;
 }
+
+.graficas{
+    align-items: center;
+    justify-content: center;
+    background-color:#3B4CCA;
+}
+
+.row{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    border-radius:30px #FFDE00;
+    color: #3B4CCA;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #CC0000;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #FFDE00;
+    display: flex;
+    flex-direction: column;
+    justify-content:;
+    gap: 20px;
+}
+
+.card-text{}
