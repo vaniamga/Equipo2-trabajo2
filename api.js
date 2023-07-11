@@ -120,6 +120,39 @@
               ];
             
               Plotly.newPlot('myDiv1', data);
+
+              var data = [{
+                
+                  x: names, 
+                  y: growth_times, 
+                  type: 'bar'
+                }
+              ];
+            
+              Plotly.newPlot('myDiv1', data);
+
+              var data = [
+                {
+                  type: 'bar',
+                  x: names,
+                  y: growth_times,
+                  name: 'Crecimiento (hrs)',
+                  marker: {
+                    color: 'red'
+                  }
+                },
+                {
+                  type: 'bar',
+                  x: names,
+                  y: natural_gift_powers,
+                  name: 'Poder natural',
+                  marker: {
+                    color: 'blue'
+                  }
+                }
+              ];
+              
+              Plotly.newPlot('myDiv2', data);
             
           });
       });
