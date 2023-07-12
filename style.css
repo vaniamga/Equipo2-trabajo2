@@ -29,6 +29,18 @@ h2{
     font-size: 45px;
     color:#FFDE00;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 8px 8px 8px #3B4CCA;
+    font-size: 20px;
+    color:#CC0000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .intro{
@@ -107,7 +119,9 @@ text-align: center;
     background-color:#3B4CCA;
 }
 
-.row{
+.graficasrow{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -125,11 +139,12 @@ text-align: center;
     flex-direction: column;
     justify-content:center;
     gap: 20px;
+    width: 40%;
 }
 
 footer {
     background-color: #CC0000;
     text-align: center;
     color: antiquewhite;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
 }

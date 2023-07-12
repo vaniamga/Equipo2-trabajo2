@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="">
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/800px-International_Pok%C3%A9mon_logo.svg.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-       <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
 </head>
-    <title>API Berries</title>
-</head>
+<body>
     <header>
         <div class="titulo">
             <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
@@ -19,35 +17,31 @@
             <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
         </div>
     </header>
-<body>
     <main>
         <div class="intro">
             <div>
                 <img class="imgi" src="https://www.serebii.net/brilliantdiamondshiningpearl/berries/6.png" alt="Berries">
             </div>
             <div>
-                <h2>¿Qué es una Poke Berrie?</h2>
-                <p>En los juegos de Pokémon, las Bayas son objetos que se encuentran en los árboles de las diferentes regiones. Estas bayas se pueden recolectar y usar en diversas formas durante las aventuras de entrenamiento de Pokémon.
-                </p> 
+                <h2>¿Qué es una Poke Berry?</h2>
+                <p>En los juegos de Pokémon, las Bayas son objetos que se encuentran en los árboles de las diferentes regiones. Estas bayas se pueden recolectar y usar de diversas formas durante las aventuras de entrenamiento de Pokémon.</p> 
             </div>
             <div>
                 <img class="imgi" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5d593771-5eab-464a-91a2-1e4af6b88b2f/ddrl3x8-f0050a0d-450f-4394-b71b-8bccef18504d.png/v1/fill/w_640,h_256/pokemon_berries_1_10_128px_artworks_by_anarlaurendil_ddrl3x8-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjU2IiwicGF0aCI6IlwvZlwvNWQ1OTM3NzEtNWVhYi00NjRhLTkxYTItMWU0YWY2Yjg4YjJmXC9kZHJsM3g4LWYwMDUwYTBkLTQ1MGYtNDM5NC1iNzFiLThiY2NlZjE4NTA0ZC5wbmciLCJ3aWR0aCI6Ijw9NjQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.8luKHvaPYn40DvpnqJ186noQ7b5Y9JvW7zRQ1QO3-P0" alt="berries">
             </div>
         </div>
-
         <div class="ep">
-            <label>Ingrese el endpoint </label>
-            <input type="text" class="form-control" id="endPoint" placeholder="Pega el URL de tu endpoint aquí">
-            <button id="endPoint" class="boton" onclick="consumir()">Obtener datos</button>
+            <label>Ingrese el endpoint:</label>
+            <input type="text" class="form-control" id="endPoint" placeholder="Pega la URL de tu endpoint aquí">
+            <button class="boton" onclick="consumir()">Obtener datos</button>
         </div>
-
         <div class="secciontabla">
             <div class="intro">
                 <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
                 <h2>Berries</h2>
                 <img class="imgt" src="https://img.freepik.com/iconos-gratis/baya-razz_318-196514.jpg?w=2000" alt="Berries">
             </div>
-            <p class="texttable">Selecciona tu berri para saber la información de ella</p>
+            <p class="texttable">Información de las PokeBerries</p>
             <div class="tablas">
                 <table class="table table-hover" id="tabla">
                     <thead>
@@ -59,47 +53,42 @@
                             <th>Tamaño</th>
                             <th>Suavidad</th>
                             <th>Secado de tierra</th>
-                            <th>Información</th>
-                        </tr> 
+                        </tr>
                     </thead>
-                 </table>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
             </div>
         </div>
-
-        <div class="graficas" >
-            <h2>Gráficas de las pokeberries</h2>
-            <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <h3>Gráfica 1</h3>
+        <div class="graficas">
+            <h2>Gráficas de las Poke Berries</h2>
+            <div class="graficasrow">
+                <div class="card">
+                    <h3>Gráfica 1: Tiempo de crecimiento</h3>
                     <div id="myDiv1"></div>
-                    <p class="card-text">Grafica 1</p>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <h3>Gráfica 2</h3>
+                <div class="card">
+                    <h3>Gráfica 2: Poder natural</h3>
                     <div id="myDiv2"></div>
-                    <p>Grafica 2</p>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <h3>Gráfica 3</h3>
+            <div class="graficasrow">
+                <div class="card">
+                    <h3>Gráfica 3: Secado de tierra</h3>
                     <div id="myDiv3"></div>
-                    <p>Grafica 3</p>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <h3>Gráfica 4</h3>
+                <div class="card">
+                    <h3>Gráfica 4: Categorías</h3>
                     <div id="myDiv4"></div>
-                    <p>Grafica 4</p>
                 </div>
             </div>
         </div>
-        
+    </main>
     <footer>
-        <h5>Gracias por visitar nuestra aplicacion, vuelve pronto </h5> 
-        <h6>link de endpoint=https://pokeapi.co/api/v2/berry/</h6>
+        <h6>Gracias por visitar nuestra aplicación, ¡vuelve pronto!</h6> 
+        <h6>Endpoint utilizado: https://pokeapi.co/api/v2/berry/</h6>
         <h6>&copy; 2023 Poke Berries. Todos los derechos reservados.</h6>
     </footer>
-<script src="api.js"></script>
+    <script src="api.js"></script>
 </body>
 </html>
